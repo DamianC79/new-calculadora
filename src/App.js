@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import './App.css';
 import {useState} from 'react';
 import {suma,resta,multiplicacion,division,potencia,raiz,hypotenusa} from './Operations.js'
-
+import Box from './Box.js'
 
 function App() {
   let [resultado, setResultado] = useState({
@@ -65,14 +65,24 @@ useEffect(() => {
           <input onChange={(e)=>handleChange(e,'numeroDos')} type="number" value={numeroDos}></input>
       </div>
 
-        <div>Suma: {resultado.suma}</div>
+        <Box text="Suma" value={resultado.suma} />
+        <Box text="Resta" value={resultado.resta} />
+        <Box text="Multiplicacion" value={resultado.multiplicacion} />
+        <Box text="Division" value={resultado.division} />
+        <Box text="Potencia" value={resultado.potencia} />
+        <Box text="Raiz" value={resultado.raizUno} />
+        <Box text="Raiz" value={resultado.raizDos} />
+        <Box text="Hipotenusa" value={resultado.hypotenusa} />
+
+        {/* <div>Suma: {resultado.suma}</div>
         <div>Resta: {resultado.resta}</div>
         <div>Multiplicacion: {resultado.multiplicacion}</div>
         <div>Division: {resultado.division}</div>
         <div>Potencia: {resultado.potencia}</div>
         <div>Raiz: {resultado.raizUno}</div>
         <div>Raiz :{resultado.raizDos}</div>
-        <div>Hipotenusa: {resultado.hypotenusa}</div>
+        <div>Hipotenusa: {resultado.hypotenusa}</div> */}
+
        </header>
 
     </div>
