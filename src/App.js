@@ -74,14 +74,7 @@ useEffect(() => {
         <Box text="Raiz" value={resultado.raizDos} />
         <Box text="Hipotenusa" value={resultado.hypotenusa} />
 
-        {/* <div>Suma: {resultado.suma}</div>
-        <div>Resta: {resultado.resta}</div>
-        <div>Multiplicacion: {resultado.multiplicacion}</div>
-        <div>Division: {resultado.division}</div>
-        <div>Potencia: {resultado.potencia}</div>
-        <div>Raiz: {resultado.raizUno}</div>
-        <div>Raiz :{resultado.raizDos}</div>
-        <div>Hipotenusa: {resultado.hypotenusa}</div> */}
+       
 
        </header>
 
